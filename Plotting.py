@@ -161,7 +161,7 @@ print("\nPlotting mixed valid/invalid data...")
 plot_segments(mixed_data)
 '''
 
-hestus_takehome = [
+final_shape_segments = [
     [[1, 1], [1, 2]],
     [[1, 2], [1.8, 2]],
     [[1.8, 2], [1.8, 1]],
@@ -173,7 +173,7 @@ hestus_takehome = [
     [[1.2, 1.2], [1.8, 1.5]]
 ]
 
-# plot_segments(hestus_takehome)
+# plot_segments(final_shape_segments)
 
 
 segments_coords_castle = [
