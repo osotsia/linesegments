@@ -237,6 +237,11 @@ def build_graph(segment_to_points_map, all_vertices_set, point_cache_for_ref_loo
     3.  It sorts these beads into their correct linear order along the string.
     4.  It creates graph edges connecting each bead to its immediate neighbor on the string.
 
+    This "beads on a string" approach is efficient because it avoids further
+    complex geometric tests. It reduces the full adjacency matrix construction problem to a
+    series of simple, independent 1D sorting problems, by using the assumption that edges can
+     only exist between vertices that lie on the same original input segment.
+
     Args:
         segment_to_points_map (dict): Maps each original segment to a set of
                                       all canonical Point objects that lie on it.
